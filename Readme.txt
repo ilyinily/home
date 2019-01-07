@@ -1,0 +1,1 @@
+That's just a sample file.
