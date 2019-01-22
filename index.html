@@ -22,22 +22,23 @@
 <div class="post-author">
 <span>Could be an image of a cat</span>
 </div>
-<p class="post-date">03 Dec 2018</p>
-<h3 class="post-title">Meow!</h3>
+<p class="post-date">22 Jan 2019</p>
+<h3 class="post-title">Massive array filling with what was read from files</h3>
 <div class="post-content">
-<p>Meow-meow.</p>
-<p>Mrrrrrrrrrrrrr.</p>
+<p>Today I managed to create two functions that fill in the Social Bot content from files. To prepare the content itself, I had to copy over all of the previously saved constants to separate files. Nailed the skill to press Ctrl + Alt + Up to create multiple cursors.</p>
+<p>However, it turned out that the functions that convert the read content into bot dialogs don't work properly - most likely I've made an error somewhere during copying.</p>
+<p>I think tomorrow I will copy files one by one to the target folder and see when error occurs. Another option could be searching for the matches in the bot dialog names, but I'm not sure now how to perform this check automatically. Likely it will take longer than file copying.</p>
 </div>
 </div>
 <div class="post">
 <div class="post-author">
 <span>Could be a picture of post writer</span>
 </div>
-<p class="post-date">02 Dec 2018</p>
-<h3 class="post-title">Becoming a web developer</h3>
+<p class="post-date">21 Jan 2019</p>
+<h3 class="post-title">Reading from files</h3>
 <div class="post-content">
-<p><strong>Unbelievable!</strong></p>
-<p>The <em>first</em> post is here.</p>
+<p>Today I have picked up a couple functions to read content from files. One is for reading object content, other for arrays. With arrays, it turned out to be tricky - for some reason when removing the \r characters from the lines, the \n characters remained in their place with an added \ before them. So had to search for a way to get rid of this and found a way with regular expressions. Not sure entirely how it works however, need to learn more.</p>
+<p>In the end, however, the reading from files turned out to work well. Hopefully I'll be able to make it massive to avoid creating a variable or constant for every single bot dialog.</p>
 </div>
 </div>
 </div>
