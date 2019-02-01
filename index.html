@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Programming Blog</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Programming Blog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 <body>
 <div id="header">
-<div class="container">
-<a id="header-title" href="index.html">Programming Blog</a>
-<ul id="header-nav"> 
-<li><a href="about.html">About</a></li>
-<li><a href="mailto:ilyinily@gmail.com">Contact Us</a></li>
-</ul>
-</div>
+    <div class="container">
+        <a id="header-title" href="index.html">Programming Blog</a>
+        <ul id="header-nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto:ilyinily@gmail.com">Contact Us</a></li>
+        </ul>
+    </div>
 </div>
 
 <div id="content">
-<div class="container">
-<div class="post">
-<div class="post-author">
-<span><img src='https://static.thenounproject.com/png/651895-200.png' width=50 height=50></span>
-</div>
-<p class="post-date">22 Jan 2019</p>
-<h3 class="post-title">Massive array filling with what was read from files</h3>
-<div class="post-content">
-<p>Today I managed to create two functions that fill in the Social Bot content from files. To prepare the content itself, I had to copy over all of the previously saved constants to separate files. Nailed the skill to press Ctrl + Alt + Up to create multiple cursors.</p>
-<p>However, it turned out that the functions that convert the read content into bot dialogs don't work properly - most likely I've made an error somewhere during copying.</p>
-<p>I think tomorrow I will copy files one by one to the target folder and see when error occurs. Another option could be searching for the matches in the bot dialog names, but I'm not sure now how to perform this check automatically. Likely it will take longer than file copying.</p>
-</div>
-</div>
-<div class="post">
-<div class="post-author">
-<span><img src='https://static.makeuseof.com/wp-content/uploads/2011/01/Format07.png' width=50 height=50></span>
-</div>
-<p class="post-date">21 Jan 2019</p>
-<h3 class="post-title">Reading from files</h3>
-<div class="post-content">
-<p>Today I have picked up a couple functions to read content from files. One is for reading object content, other for arrays. With arrays, it turned out to be tricky - for some reason when removing the \r characters from the lines, the \n characters remained in their place with an added \ before them. So had to search for a way to get rid of this and found a way with regular expressions. Not sure entirely how it works however, need to learn more.</p>
-<p>In the end, however, the reading from files turned out to work well. Hopefully I'll be able to make it massive to avoid creating a variable or constant for every single bot dialog.</p>
-</div>
-</div>
-</div>
+    <div class="container">
+        <div class="post">
+            <div class="post-author">
+                <span><img src='data:image/jpeg;base64,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'></span>
+            </div>
+            <p class="post-date">23 Jan 2019</p>
+            <h3 class="post-title">Figuring how the array filling actually works</h3>
+            <div class="post-content">
+                <p>I was copying files one by one and tried to observe when the issue appears. Found that error arises when I copied one of menu files. They didn't look anything strange at all, so I went on thinking.</p>
+                <p>Turned out that somehow the menus were flawed when I opened and edited some of them in Notepad, not the VS Code I used for creation. Seemed strange, but I simply copied the content to VS Code and all started working again.</p>
+                <p>So in the end the bot was working as designed, with all the menus and info threads working as expected. Yay!</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <span><img src='https://static.thenounproject.com/png/651895-200.png'></span>
+            </div>
+            <p class="post-date">22 Jan 2019</p>
+            <h3 class="post-title">Massive array filling with what was read from files</h3>
+            <div class="post-content">
+                <p>Today I managed to create two functions that fill in the Social Bot content from
+                    files. To prepare the content itself, I had to copy over all of the previously
+                    saved constants to separate files. Nailed the skill to press Ctrl + Alt + Up to
+                    create multiple cursors.</p>
+                <p>However, it turned out that the functions that convert the read content into bot
+                    dialogs don't work properly - most likely I've made an error somewhere during
+                    copying.</p>
+                <p>I think tomorrow I will copy files one by one to the target folder and see when
+                    error occurs. Another option could be searching for the matches in the bot
+                    dialog names, but I'm not sure now how to perform this check automatically.
+                    Likely it will take longer than file copying.</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <span><img
+                        src='https://static.makeuseof.com/wp-content/uploads/2011/01/Format07.png'></span>
+            </div>
+            <p class="post-date">21 Jan 2019</p>
+            <h3 class="post-title">Reading from files</h3>
+            <div class="post-content">
+                <p>Today I have picked up a couple functions to read content from files. One is for
+                    reading object content, other for arrays. With arrays, it turned out to be
+                    tricky - for some reason when removing the \r characters from the lines, the \n
+                    characters remained in their place with an added \ before them. So had to search
+                    for a way to get rid of this and found a way with regular expressions. Not sure
+                    entirely how it works however, need to learn more.</p>
+                <p>In the end, however, the reading from files turned out to work well. Hopefully
+                    I'll be able to make it massive to avoid creating a variable or constant for
+                    every single bot dialog.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div id="footer">
-<div class="container">
-<div class="column">
-<h4>Useful Links</h4>
-<p>
-<a href="http://google.com">Visit Google</a>
-<br>
-<a href="http://ya.ru">Visit Yandex</a>
-</p>
-</div>
-<div class="column">
-<h4>My Story</h4>
-<p>
-When I can tell more, I'll post it here.
-</p>
-</div>
-</div>
+    <div class="container">
+        <div class="column">
+            <h4>Useful Links</h4>
+            <p>
+                <a href="http://google.com">Visit Google</a>
+                <br>
+                <a href="http://ya.ru">Visit Yandex</a>
+            </p>
+        </div>
+        <div class="column">
+            <h4>My Story</h4>
+            <p>
+                When I can tell more, I'll post it here.
+            </p>
+        </div>
+    </div>
 </div>
 
 </body>
